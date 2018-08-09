@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html >
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/html">
+<script src="{% static 'EIA/js/jquery.min.js' %}"></script>
+<link href="{% static 'EIA/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'EIA/css/flat-ui.css' %}" rel="stylesheet">
+  <script src="{% static 'EIA/js/flat-ui.min.js' %}"></script>
+<head>
+    <title id="title">
+        {{ json|safe }}
+    </title>
+</head>
+<body>
+    <img src="{% static 'EIA/img/test3.png' %}" id="handdemo" width="400px" height = "400px"/>
+    <img src="{% static 'EIA/img/left.png' %}" id="lefthand" width="100px" height = "100px" oncontextmenu="return false;"/>
+    <img src="{% static 'EIA/img/right.png' %}" id="righthand" width="100px" height = "100px" oncontextmenu="return false;"/>
+    <div id = "canvascontainer" width="800px" height="675px">
+        <form action="/updatehand/" id = "markform" method="post">
+            {% csrf_token %}
+            <section><canvas id="canvas21" width="800" height="675px">
+    <script type="text/javascript">
+        sc = 0;
+        dataname = '{{ name|safe }}';
+        jsonstring = '{{ json|safe }}';
+        num = '{{ num|safe }}';
+        document.getElementById("canvascontainer").oncontextmenu = function(e){
+　　           return false;
+};
+        function drawbackground(id) {
+            var canvas = document.getElementById(id);
+            if (canvas == null)
+                return false;
+            var context = canvas.getContext("2d");
+            img = new Image();
+            img.src = "{% static 'EIA/img/l_7.png' %}";
+            img.onload = function(){
+                h = img.height;
+                sc = 600/h;
+                context.scale(sc,sc);
+                context.drawImage(img,0,0);
+                context.scale(1,1);
+                for(var i=0;i<num;i++){
+               for(var j=0;j < 63;j++){
+                   if((j+1)%3!=0)
+                        arr[i][j]=arr[i][j]*sc;
+                   else arr[i][j]=arr[i][j];
+               }
+            }
+            for (var i = 0; i<4;i++)
+                bound[i] = bound[i]*sc;
+            update("canvasface");
+            }
+        }
+        var obj = JSON.parse(jsonstring);
+        var obj2 = obj.keypoint_annotations;
+        var obj3 = obj.bound;
+        arr = new Array();
+            for(var i=0;i<num;i++){
+               arr[i]=new Array();
+               for(var j=0;j < 63;j++){
+                        arr[i][j]=0.0;
+               }
+            }
+            var i = 0;
+            for(var o in obj2){
+                for(var j=0;j<63;j++){
+                        arr[i][j]=obj2[o][j];
+               }
+               i++;
+            }//初始化
+        bound = new Array();
+            for (var i = 0; i<4;i++)
+            {
+                bound[i] = obj3[i];
+            }
+    </script>
+    </canvas></section>
+    <section><canvas id="canvasface" name="canvasface" width="800" height="675"></canvas></section>
+    </form>
+        <button class="btn btn-block btn-lg btn-primary" id="submit_btn">标注完成</button>
+    </div>
+    <style>
+           #canvas21{
+           z-index:1;
+           position:absolute;left:0;top:0;
+            }
+           #canvasface{
+           z-index:2;
+           position:absolute;left:0;top:0;
+            }
+           #canvascontainer{
+               margin:0 auto;
+               width:800px;
+               position:relative;
+           }
+        #handdemo{
+            position:absolute;right:0;top:200px;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #lefthand{
+            position:absolute;left:200px;top:200px;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #righthand{
+            position:absolute;left:200px;top:300px;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #submit_btn{
+            position:absolute;left:200px;top:700px;
+
+        }
+    </style>
+<script src="{% static 'EIA/js/hand.js' %}"></script>
+</body>
+</html>

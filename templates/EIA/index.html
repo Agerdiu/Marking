@@ -1,0 +1,119 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SMART-ER</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+  <link href="{% static 'EIA/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'EIA/css/flat-ui.css' %}" rel="stylesheet">
+  <link href="{% static 'EIA/css/register-login.css' %}" rel="stylesheet">
+  <script src="{% static 'EIA/js/jquery.min.js' %}"></script>
+  <script src="{% static 'EIA/js/flat-ui.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'EIA/js/echarts.common.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'EIA/js/echarts.js' %}"></script>
+  <style>
+    .good {
+      color: rgb(200, 69, 151)!important;
+    }
+  </style>
+</head>
+
+<body>
+  <!--导航栏-->
+  <header class="navbar navbar-inverse navbar-embossed navbar-expand-lg navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+      <!--导航栏响应式设置-->
+      <div class="navbar-header">
+        <a href="/gis" class="navbar-brand">SMART-ER</a>
+      </div>
+      <!--导航栏响应式设置-->
+      <nav id="bs-navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="/index">首页</a>
+            </li>
+            <li>
+                <a href="/RPage">单词记忆</a>
+            </li>
+            <li>
+                <a href="/RecordPage">自定义单词</a>
+            </li>
+            <li>
+                <a href="/ReviewPage">单词回顾</a>
+            </li>
+            <li>
+                <a href="/ExamPage">自我考核</a>
+            </li>
+            <li>
+                <a href="/MemPage">已学词库</a>
+            </li>
+        </ul>
+          <ul class="nav navbar-nav navbar-right ">
+              {% if user.is_authenticated %}
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle" data-toggle="dropdown" style="font-size: 20px;" aria-haspopup="true" aria-expanded="false">
+                          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>{{ request.session.userName }}
+                          <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li><a href="/changeInfoPage">修改个人信息</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="/logout" class="loginOut-btn">退出登录</a></li>
+                      </ul>
+                  </div>
+              {% else %}
+                  <li><button type="button" class="btn btn-default navbar-btn login-button"  id="login_modal_btn"><a href="/login/">登录</a></button></li>
+                  <li><button type="button" class="btn btn-default navbar-btn reg-button" id="register_modal_btn"><a href="/register/">注册</a></button></li>
+              {% endif %}
+          </ul>
+      </nav>
+    </div>
+  </header>
+  <!--导航栏-->
+  <!--巨幕-->
+  <div>
+    <div class="container">
+      <h1>智能单词助手</h1>
+      <p>提供单词记忆、回顾等学习辅助服务</p>
+        <h4>这里记录你的学习过程：</h4>
+        <h4>你现在设定的单词难度：{{ rank }}级</h4>
+    </div>
+  </div>
+  <div id="chartmain"class="container" style="width:50%; height: 40%;">
+   <script type="text/javascript">
+        //指定图标的配置和数据
+        var option = {
+            title:{
+                text:'用户每日学习单词数：'
+            },
+            tooltip:{},
+            legend:{
+                data:['用户单词曲线']
+            },
+            xAxis:{
+                data:{{ labels|safe }}
+            },
+            yAxis:{
+
+            },
+            series:[{
+                name:'单词学习数',
+                type:'line',
+                data:{{ numbers|safe }}
+            }]
+        };
+        //初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chartmain'));
+
+        //使用制定的配置项和数据显示图表
+        myChart.setOption(option);
+    </script>
+  </div>
+  <!--巨幕-->
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+  <link href="{% static 'EIA/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'EIA/css/flat-ui.css' %}" rel="stylesheet">
+  <link href="{% static 'EIA/css/register-login.css' %}" rel="stylesheet">
+  <script src="{% static 'EIA/js/jquery.min.js' %}"></script>
+  <script src="{% static 'EIA/js/flat-ui.min.js' %}"></script>
+  <script src="{% static 'EIA/js/jquery.particleground.min.js' %}"></script>
+</head>
+
+<body class="login-body">
+  <div id="particles">
+  </div>
+  <!--登陆框-->
+  <div class="login-container">
+    <div class="form-group">
+      <div class="col-sm-12">
+        <h1 class="text-center">在线数据标注</h1>
+        <h5 class="text-center">CAD实验室</h5>
+      </div>
+    </div>
+    <form class="form-horizontal" action="/login/" method="POST" id="login_form">
+        {% csrf_token %}
+            <div class="form-group">
+            </div>
+            <div class="form-group">
+            </div>
+        <div style="margin: auto; color:red ;text-align:center">{{ error }}</div>
+        </form>
+      <a href="/handmark" class="btn btn-block btn-lg btn-primary">手部标注</a>
+      <a href="/peoplemark" class="btn btn-block btn-lg btn-primary">人体标注</a>
+  </div>
+  <!--登陆框-->
+
+</body>
+<script>
+//  $('#particles').particleground();
+  //可以根据下面表格中参数说明设定相应参数
+  $('#particles').particleground({
+    dotColor: 'rgb(195, 242, 195)',
+    lineColor: 'rgb(195, 242, 195)'
+  });
+</script>
+
+
+
+
+<script src="{% static 'EIA/js/login.js' %}"></script>
+</html>
