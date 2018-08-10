@@ -30,6 +30,7 @@ def hand(request):
             break
     hand.token = 1
     hand.save()
+    imgurl = "/static/EIA/hand-images/" + hand.dataname + ".png"
     try:
         m = loadmat(handjointspath + hand.dataname + ".mat")
         b = loadmat("U:\\hand\\bound\\video_1\\" + hand.dataname + ".mat")
@@ -54,7 +55,7 @@ def hand(request):
         array2.append(float(item[3]))
     newjson["bound"] = array2
     return render(request, 'EIA/Markinghand.html',
-                  context={'json': json.dumps(newjson), 'num': 1, 'name': hand.dataname})
+                  context={'json': json.dumps(newjson), 'num': 1, 'name': hand.dataname,'imgurl':imgurl})
 def updatepeople(request):
     if request.POST:
         data = json.loads(request.POST.get("data"))

@@ -32,7 +32,7 @@
                 return false;
             var context = canvas.getContext("2d");
             img = new Image();
-            img.src = "{% static 'EIA/img/l_7.png' %}";
+            img.src = "{{ imgurl|safe }}";
             img.onload = function(){
                 h = img.height;
                 sc = 600/h;
