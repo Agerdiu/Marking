@@ -42,7 +42,7 @@
       <file leaf-file-name="form.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EIA/form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="38">
               <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -54,7 +54,7 @@
       <file leaf-file-name="peoplemark.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EIA/static/EIA/js/peoplemark.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="4883">
               <caret line="257" column="13" selection-start-line="257" selection-start-column="8" selection-end-line="257" selection-end-column="13" />
             </state>
           </provider>
@@ -63,11 +63,20 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EIA/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="10" column="84" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
+            <state relative-caret-position="133">
+              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmartEIAproject/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="63" column="61" lean-forward="true" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -76,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/templates/EIA/Marking.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1026">
-              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -84,29 +93,11 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EIA/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="133">
               <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/EIA/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="102" column="15" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/EIA/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -118,6 +109,11 @@
               <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmartEIAproject/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -146,6 +142,9 @@
       <find>draw21</find>
       <find>alert</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -206,8 +205,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="182" />
-    <option name="y" value="-13" />
+    <option name="x" value="181" />
+    <option name="y" value="-14" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -221,87 +220,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
+              <item name="Marking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Marking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
+              <item name="Marking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Marking" type="462c0819:PsiDirectoryNode" />
               <item name="EIA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="EIA" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="EIA" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="EIA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="EIA" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="EIA" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="Projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
+              <item name="Marking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Marking" type="462c0819:PsiDirectoryNode" />
               <item name="SmartEIAproject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="tile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BS" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="EIA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -313,7 +243,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://U:/BS/EIA/views.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="U:/MPS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -482,9 +412,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Python Console" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3287858" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32932165" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2265625" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
@@ -504,29 +434,29 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3287858" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.2265625" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287858" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287858" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3287858" />
-      <window_info anchor="right" id="Data View" order="5" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3983629" />
-      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3287858" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,16 +496,6 @@
     <entry file="file://$PROJECT_DIR$/EIA/static/EIA/js/register.js" />
     <entry file="file://$PROJECT_DIR$/templates/EIA/examination.html" />
     <entry file="file://$PROJECT_DIR$/templates/EIA/changeInfo.html" />
-    <entry file="file://$PROJECT_DIR$/SmartEIAproject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartEIAproject/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/EIA/remember.html" />
     <entry file="file://$PROJECT_DIR$/templates/EIA/memory.html" />
     <entry file="file://$PROJECT_DIR$/templates/EIA/register.html" />
@@ -647,15 +567,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/EIA/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="1938">
           <caret line="102" column="15" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartEIAproject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -668,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/EIA/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="209">
           <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
         </state>
       </provider>
@@ -676,13 +589,13 @@
     <entry file="file://$PROJECT_DIR$/templates/EIA/Marking.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1026">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EIA/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="133">
           <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -699,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EIA/form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="38">
           <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -716,15 +629,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EIA/static/EIA/js/peoplemark.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="4883">
           <caret line="257" column="13" selection-start-line="257" selection-start-column="8" selection-end-line="257" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartEIAproject/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartEIAproject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartEIAproject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="63" column="61" lean-forward="true" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EIA/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="10" column="84" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
+        <state relative-caret-position="133">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
