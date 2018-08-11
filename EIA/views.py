@@ -8,8 +8,9 @@ handjointspath = "U:\\hand\\joints\\video_1\\"
 handboundspath = "U:\\hand\\bound\\video_1\\"
 def index(request):
     return render(request, 'EIA/login.html', context={})
-
+#页面请求标注人物
 def people(request):
+    #这个循环体用于筛选目前未被别人标注的数据，token为零表示未被别人标注
     while(1):
         people = Peopledata.objects.get(id=random.randint(0, Peopledata.objects.count()-1))
         if people.token == 0 :
@@ -22,7 +23,7 @@ def people(request):
     for item in data:
         count = count + 1
     return render(request, 'EIA/Marking.html', context={'json': people.datajson, 'num': count,'name': people.dataname,'imgurl':imgurl})
-
+#页面请求标注手部
 def hand(request):
     while (1):
         hand = Handsdata.objects.get(id=random.randint(0, Handsdata.objects.count() - 1))
@@ -56,6 +57,7 @@ def hand(request):
     newjson["bound"] = array2
     return render(request, 'EIA/Markinghand.html',
                   context={'json': json.dumps(newjson), 'num': 1, 'name': hand.dataname,'imgurl':imgurl})
+#页面请求提交人物标注
 def updatepeople(request):
     if request.POST:
         data = json.loads(request.POST.get("data"))
@@ -67,14 +69,17 @@ def updatepeople(request):
             item = data[i+1]["values"]
             i = i + 1
         down.datajson = json.dumps(downjson)
+        #提交时归还令牌
         down.token = 0
         down.save()
     return index(request)
+#页面请求提交手部标注
 def updatehand(request):
     if request.POST:
         data = json.loads(request.POST.get("data"))
         dataname = data[0]['dataname']
         hand = Handsdata.objects.get(dataname=dataname)
+        #提交时归还令牌
         hand.token = 0
         hand.save()
         m = loadmat(handjointspath + dataname + ".mat")

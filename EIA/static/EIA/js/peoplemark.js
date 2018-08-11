@@ -139,7 +139,7 @@ function update(id) {
                }
             }
         }
-
+//鼠标按下事件
 $("#canvasface").mousedown(function (t){
     var canvas = document.getElementById("canvasface");
             if (canvas == null)
@@ -186,7 +186,7 @@ $("#canvasface").click(function () {
     var x=e.clientX-canvascontainer.offsetLeft;
     var y=e.clientY-canvascontainer.offsetTop;
     var hitflag = 0;
-        for(var i=0;i<num;i++){          //一维长度为人数
+        for(var i=0;i<num;i++){
                 for(var j=0;j<51;j=j+3){
                     if(arr[i][j+2]!=3){
                         if(x > arr[i][j] - 5 && x <= arr[i][j] + 10 && y > arr[i][j+1] - 5 && y <= arr[i][j+1] + 10)
@@ -208,33 +208,6 @@ $("#canvasface").click(function () {
             }
     update("canvasface");
     }
-});
-$("#nose_btn").click(function () {
-    if(fi!=-1){
-        arr[fi][14*3] = arr[fi][12*3];
-        arr[fi][14*3+1] = arr[fi][12*3+1]+20;
-        arr[fi][14*3+2] = 1;
-        fj = 14;
-    }
-    update("canvasface");
-});
-$("#Lfoot_btn").click(function () {
-    if(fi!=-1){
-        arr[fi][16*3] = arr[fi][11*3];
-        arr[fi][16*3+1] = arr[fi][11*3+1];
-        arr[fi][16*3+2] = 1;
-        fj = 16;
-    }
-    update("canvasface");
-});
-$("#Rfoot_btn").click(function () {
-    if(fi!=-1){
-        arr[fi][15*3] = arr[fi][8*3];
-        arr[fi][15*3+1] = arr[fi][8*3+1];
-        arr[fi][15*3+2] = 1;
-        fj = 15;
-    }
-    update("canvasface");
 });
 $("#submit_btn").click(function () {
  var myform=$('#markform'); //得到form对象
